@@ -1,0 +1,216 @@
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 0 20px; /* Adiciona padding horizontal para evitar que o conteúdo toque as bordas */
+
+
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s; /* Suaviza a transição de cor */
+}
+
+nav a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+
+
+
+#hero {
+    background-image: url('hero-bg.jpg'); /* Substitua pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+
+
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+.btn:hover {
+    background-color: #0056b3;
+
+}
+
+#carros {
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+#carros h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+.carros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os carros quebrem a linha em telas menores */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto;
+}
+
+
+.carro {
+    width: 300px;  /* Largura dos cards */
+    margin: 20px; /* Espaço entre os cards */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Impede que a imagem ultrapasse as bordas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+
+
+}
+
+.carro img {
+    max-width: 100%; /* Faz a imagem ocupar a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Evita espaço extra abaixo da imagem */
+
+}
+
+
+.carro h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+
+#contato {
+    padding: 50px 0;
+    text-align: center;
+    background-color:#fff ;
+}
+
+
+#contato input,
+#contato textarea{
+
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+#contato button{
+
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sobre {
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) { /* Ajusta para telas menores que 768px */
+    nav ul {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    nav li {
+        margin: 10px 0; /* Adiciona margem superior e inferior */
+    }
+
+    .hero-content h1 {
+        font-size: 36px; /* Diminui o tamanho do título */
+    }
+    .carros-container {
+        flex-direction: column; /* Os carros agora ficarão um embaixo do outro */
+        align-items: center; /* Centraliza os carros */
+    }
+    .carro {
+        margin: 10px 0; /* Ajusta a margem superior e inferior */
+    }
+
+}
