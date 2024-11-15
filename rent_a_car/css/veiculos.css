@@ -1,0 +1,63 @@
+/* style.css (estilos adicionais) */
+
+#busca-veiculos {
+    display: flex;
+    flex-direction: column; /* Itens empilhados verticalmente */
+    align-items: center;  /* Centraliza horizontalmente */
+    margin-bottom: 30px;
+}
+
+
+#busca-veiculos input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+
+#lista-veiculos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.veiculo {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+.veiculo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn-reservar { /* Estilo para o botão de reserva */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaço superior */
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.btn-reservar:hover {
+    background-color: #0056b3;
+}

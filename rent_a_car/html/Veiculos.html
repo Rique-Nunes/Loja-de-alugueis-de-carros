@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent a Car - Veículos</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/veiculos.css" />
+    <!-- Seu arquivo CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">Rent a Car</a>
+        </div>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="veiculos.html">Veículos</a></li>
+          <!-- Link para a página de veículos -->
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="busca-veiculos">
+        <h2>Encontre o seu carro ideal</h2>
+
+        <form id="formulario-busca">
+          <input
+            type="text"
+            id="busca-texto"
+            placeholder="Buscar por modelo, marca..."
+          />
+          <button type="submit">Buscar</button>
+        </form>
+
+        <div>
+          <label for="data-inicio">Retirada:</label>
+          <input type="date" id="data-inicio" />
+          <label for="data-fim">Devolução:</label>
+          <input type="date" id="data-fim" />
+
+          <!-- Filtros Adicionais -->
+          <select id="filtro-marca">
+            <option value="">Todas as Marcas</option>
+            <option value="marca1">Marca 1</option>
+            <option value="marca2">Marca 2</option>
+          </select>
+        </div>
+
+        <div>
+          <select id="filtro-tipo">
+            <option value="">Todos os Tipos</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+          </select>
+
+          <label for="pcd">Adaptado PCD:</label>
+          <input type="checkbox" id="pcd" />
+        </div>
+      </section>
+
+      <section id="lista-veiculos"></section>
+    </main>
+
+    <footer>
+      <p>© 2024 Rent a Car. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
